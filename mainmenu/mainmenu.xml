@@ -1,0 +1,18 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<scene>
+<object name="Profile_Name" localized="Profile_Name" image="" mask="" x="136" y="692" w="304" h="43" />
+<object name="play_hl" localized="play_hl" image="play_hl.png" mask="" x="557" y="637" w="124" h="69" />
+<object name="play_n" localized="play_n" image="play_n.png" mask="" x="557" y="637" w="124" h="69" />
+<object name="change_hl" localized="change_hl" image="change_hl.png" mask="" x="127" y="729" w="320" h="35" />
+<object name="change_n" localized="change_n" image="change_n.png" mask="" x="127" y="729" w="320" h="35" />
+<object name="exit_hl" localized="exit_hl" image="exit_hl.png" mask="" x="884" y="617" w="73" h="48" />
+<object name="exit_n" localized="exit_n" image="exit_n.png" mask="" x="884" y="617" w="73" h="48" />
+<object name="options_hl" localized="options_hl" image="options_hl.png" mask="" x="713" y="624" w="133" h="59" />
+<object name="options_n" localized="options_n" image="options_n.png" mask="" x="713" y="624" w="133" h="59" />
+<object name="logo" localized="logo" image="logo.png" mask="" x="190" y="3" w="644" h="289" />
+<object name="secrets_n" localized="secrets_n" image="secrets_n.png" mask="" x="754" y="701" w="148" h="49" />
+<object name="secrets_hl" localized="secrets_hl" image="secrets_hl.png" mask="" x="754" y="701" w="148" h="49" />
+<object name="Secrets Locked" localized="Secrets Locked" image="Secrets Locked.png" mask="" x="754" y="705" w="148" h="48" />
+<object name="background" localized="background" image="background.png" mask="" x="0" y="0" w="1024" h="768" />
+<object name="background_far" localized="background_far" image="background_far.png" mask="" x="271" y="118" w="466" h="476" />
+</scene>

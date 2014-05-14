@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>
+			
+	</title>
+
+<style type="text/css">
+html, body	{
+			height:100%;
+			margin:0;
+			padding:0;
+			}
+			
+body{
+	background:black url("nuc1.jpg");
+	text-align:center;
+	}
+	
+.div_fundal	{
+			margin:0;
+			padding:0;	
+			}
+			
+.obj_gasit	{
+		text-decoration: line-through;
+		}
+</style>
+	
+<script type="text/javascript">
+	var raport = 1;
+	var id_pers = "char_0";
+	backgr_lat = 845;	
+	backgr_inalt = 768;
+	var owl1 = new Array();
+	for (var i=0;i<129;i++)
+		{
+		owl1[i] = new Image();
+		if (i<9) owl1[i].src = "owl/Owl_hint 00"+(i+1)+".png";
+		else if (i<99) owl1[i].src = "owl/Owl_hint 0"+(i+1)+".png";
+			else owl1[i].src = "owl/Owl_hint "+(i+1)+".png";
+		owl1[i].style.position = "absolute";
+		owl1[i].style.bottom = "0px";
+		owl1[i].style.left = "150px";
+		}
+	var owl2 = new Array();
+	for (var i=0;i<129;i++)
+		{
+		owl2[i] = new Image();
+		if (i<9) owl2[i].src = "owl/Owl_hint 00"+(i+1)+".png";
+		else if (i<99) owl2[i].src = "owl/Owl_hint 0"+(i+1)+".png";
+			else owl2[i].src = "owl/Owl_hint "+(i+1)+".png";
+		owl2[i].style.position = "absolute";
+		owl2[i].style.bottom = "0px";
+		owl2[i].style.left = "150px";
+		}
+	var owl3 = new Array();
+	for (var i=0;i<129;i++)
+		{
+		owl3[i] = new Image();
+		if (i<9) owl3[i].src = "owl/Owl_hint 00"+(i+1)+".png";
+		else if (i<99) owl3[i].src = "owl/Owl_hint 0"+(i+1)+".png";
+			else owl3[i].src = "owl/Owl_hint "+(i+1)+".png";
+		owl3[i].style.position = "absolute";
+		owl3[i].style.bottom = "0px";
+		owl3[i].style.left = "150px";
+		}
+	var owl4 = new Array();
+	for (var i=0;i<129;i++)
+		{
+		owl4[i] = new Image();
+		if (i<9) owl4[i].src = "owl/Owl_hint 00"+(i+1)+".png";
+		else if (i<99) owl4[i].src = "owl/Owl_hint 0"+(i+1)+".png";
+			else owl4[i].src = "owl/Owl_hint "+(i+1)+".png";
+		owl4[i].style.position = "absolute";
+		owl4[i].style.bottom = "0px";
+		owl4[i].style.left = "150px";
+		}
+	var owl5 = new Array();
+	for (var i=0;i<129;i++)
+		{
+		owl5[i] = new Image();
+		if (i<9) owl5[i].src = "owl/Owl_hint 00"+(i+1)+".png";
+		else if (i<99) owl5[i].src = "owl/Owl_hint 0"+(i+1)+".png";
+			else owl5[i].src = "owl/Owl_hint "+(i+1)+".png";
+		owl5[i].style.position = "absolute";
+		owl5[i].style.bottom = "0px";
+		owl5[i].style.left = "150px";
+		}
+	var owl6 = new Array();
+	for (var i=0;i<129;i++)
+		{
+		owl6[i] = new Image();
+		if (i<9) owl6[i].src = "owl/Owl_hint 00"+(i+1)+".png";
+		else if (i<99) owl6[i].src = "owl/Owl_hint 0"+(i+1)+".png";
+			else owl6[i].src = "owl/Owl_hint "+(i+1)+".png";
+		owl6[i].style.position = "absolute";
+		owl6[i].style.bottom = "0px";
+		owl6[i].style.left = "150px";
+		}
+		
+	
+function definire_camere(){	
+		var images1 = new Array();
+		for(var a=0; a < 17;a++)
+			images1[a] = new Object();
+		
+	images1[0].sus = "202";
+	images1[0].st = "219";
+	images1[0].sursa = "HO1/room1/fish1.png";
+	images1[0].alt = "Fish";
+	images1[1].sus = "638";
+	images1[1].st = "620";
+	images1[1].sursa = "HO1/room1/dragon.png";
+	images1[1].alt = "Dragon";
+	images1[2].sus = "21";
+	images1[2].st = "607";
+	images1[2].sursa = "HO1/room1/eagle.png";
+	images1[2].alt = "Eagle";
+	images1[3].sus = "18";
+	images1[3].st = "258";
+	images1[3].sursa = "HO1/room1/butterfly03.png";
+	images1[3].alt = "Yellow butterfly";
+	images1[4].sus = "514";
+	images1[4].st = "679";
+	images1[4].sursa = "HO1/room1/n_chess.png";
+	images1[4].alt = "Chess";
+	images1[5].sus = "141";
+	images1[5].st = "117";
+	images1[5].sursa = "HO1/room1/butterfly.png";
+	images1[5].alt = "Blue butterfly";
+	images1[6].sus = "323";
+	images1[6].st = "454";
+	images1[6].sursa = "HO1/room1/piano.png";
+	images1[6].alt = "Piano";
+	images1[7].sus = "592";
+	images1[7].st = "727";
+	images1[7].sursa = "HO1/room1/butterfly02.png";
+	images1[7].alt = "Brown butterfly";
+	images1[8].sus = "224";
+	images1[8].st = "794";
+	images1[8].sursa = "HO1/room1/dolphin.png";
+	images1[8].alt = "Dolphin";
+	images1[9].sus = "330";
+	images1[9].st = "242";
+	images1[9].sursa = "HO1/room1/dog.png";
+	images1[9].alt = "Dog";
+	images1[10].sus = "359";
+	images1[10].st = "486";
+	images1[10].sursa = "HO1/room1/n_box03.png";
+	images1[10].alt = "Open box";
+	images1[11].sus = "408";
+	images1[11].st = "442";
+	images1[11].sursa = "HO1/room1/n_box04.png";
+	images1[11].alt = "Box";
+	images1[12].sus = "122";
+	images1[12].st = "408";
+	images1[12].sursa = "HO1/room1/frog.png";
+	images1[12].alt = "Frog";
+	images1[13].sus = "566";
+	images1[13].st = "33";
+	images1[13].sursa = "HO1/room1/cake.png";
+	images1[13].alt = "Cake";
+	images1[14].sus = "730";
+	images1[14].st = "8";
+	images1[14].sursa = "HO1/room1/dice.png";
+	images1[14].alt = "Dice";
+	images1[15].sus = "278";
+	images1[15].st = "0";
+	images1[15].sursa = "HO1/room1/n_statuette.png";
+	images1[15].alt = "Statuette";
+	images1[16].sus = "662";
+	images1[16].st = "314";
+	images1[16].sursa = "HO1/room1/n_cat.png";
+	images1[16].alt = "Cat";
+	
+	fundal1 = document.createElement("img"); /* imaginea de fundal*/
+	srs1 = fundal1.src = "HO1/room1/background_1.jpg";
+	
+	var backgr1_latime = 845;	
+	var backgr1_inaltime = 768;
+	
+	camera1 = create_room(images1, fundal1, backgr1_latime, backgr1_inaltime, owl1);
+	camera1.style.display = "none";
+	
+		var images2 = new Array();
+		for(var b=0; b < 17;b++)
+			images2[b] = new Object();
+		
+	images2[0].sus = "452";
+	images2[0].st = "225";
+	images2[0].sursa = "HO1/room2/n_statue2.png";
+	images2[0].alt = "Statue";
+	images2[1].sus = "198";
+	images2[1].st = "798";
+	images2[1].sursa = "HO1/room2/lighter.png";
+	images2[1].alt = "Lighter";
+	images2[2].sus = "671";
+	images2[2].st = "78";
+	images2[2].sursa = "HO1/room2/deer.png";
+	images2[2].alt = "Deer";
+	images2[3].sus = "276";
+	images2[3].st = "205";
+	images2[3].sursa = "HO1/room2/oil_lamp.png";
+	images2[3].alt = "Oil lamp";
+	images2[4].sus = "223";
+	images2[4].st = "718";
+	images2[4].sursa = "HO1/room2/pig3.png";
+	images2[4].alt = "Pig 3";
+	images2[5].sus = "103";
+	images2[5].st = "70";
+	images2[5].sursa = "HO1/room2/pig5.png";
+	images2[5].alt = "Pig 5";
+	images2[6].sus = "217";
+	images2[6].st = "290";
+	images2[6].sursa = "HO1/room2/foyer_letter.png";
+	images2[6].alt = "Letter";
+	images2[7].sus = "596";
+	images2[7].st = "217";
+	images2[7].sursa = "HO1/room2/shell.png";
+	images2[7].alt = "Shell";
+	images2[8].sus = "727";
+	images2[8].st = "520";
+	images2[8].sursa = "HO1/room2/n_sticker.png";
+	images2[8].alt = "Sticker";
+	images2[9].sus = "186";
+	images2[9].st = "492";
+	images2[9].sursa = "HO1/room2/parahod.png";
+	images2[9].alt = "Parahod";
+	images2[10].sus = "618";
+	images2[10].st = "538";
+	images2[10].sursa = "HO1/room2/spider1.png";
+	images2[10].alt = "Spider";
+	images2[11].sus = "314";
+	images2[11].st = "130";
+	images2[11].sursa = "HO1/room2/dragon.png";
+	images2[11].alt = "Dragon";
+	images2[12].sus = "174";
+	images2[12].st = "299";
+	images2[12].sursa = "HO1/room2/brush.png";
+	images2[12].alt = "Brush";
+	images2[13].sus = "270";
+	images2[13].st = "688";
+	images2[13].sursa = "HO1/room2/sherif.png";
+	images2[13].alt = "Sheriff";
+	images2[14].sus = "525";
+	images2[14].st = "603";
+	images2[14].sursa = "HO1/room2/boot.png";
+	images2[14].alt = "Boot";
+	images2[15].sus = "197";
+	images2[15].st = "432";
+	images2[15].sursa = "HO1/room2/vaze.png";
+	images2[15].alt = "Vase";
+	images2[16].sus = "512";
+	images2[16].st = "62";
+	images2[16].sursa = "HO1/room2/bell1.png";
+	images2[16].alt = "Bell";
+	
+	fundal2 = document.createElement("img"); /* imaginea de fundal*/
+	srs2 = fundal2.src = "HO1/room2/background.jpg";
+	
+	var backgr2_latime = 845;	
+	var backgr2_inaltime = 768;
+	
+	camera2 = create_room(images2, fundal2, backgr2_latime, backgr2_inaltime, owl2);
+	camera2.style.display = "none";
+	
+	var images3 = new Array();
+		for(var c=0; c < 17;c++)
+			images3[c] = new Object();
+		
+	images3[0].sus = "624";
+	images3[0].st = "640";
+	images3[0].sursa = "HO1/room3/n_korzinapersik.png";
+	images3[0].alt = "Peaches";
+	images3[1].sus = "396";
+	images3[1].st = "323";
+	images3[1].sursa = "HO1/room3/honey.png";
+	images3[1].alt = "Honey";
+	images3[2].sus = "593";
+	images3[2].st = "486";
+	images3[2].sursa = "HO1/room3/shahmata.png";
+	images3[2].alt = "Checkmate";
+	images3[3].sus = "443";
+	images3[3].st = "256";
+	images3[3].sursa = "HO1/room3/utug.png";
+	images3[3].alt = "Iron";
+	images3[4].sus = "687";
+	images3[4].st = "623";
+	images3[4].sursa = "HO1/room3/egg.png";
+	images3[4].alt = "Egg";
+	images3[5].sus = "442";
+	images3[5].st = "355";
+	images3[5].sursa = "HO1/room3/kabachki.png";
+	images3[5].alt = "Zucchini";
+	images3[6].sus = "582";
+	images3[6].st = "515";
+	images3[6].sursa = "HO1/room3/n_sahar.png";
+	images3[6].alt = "Sugar";
+	images3[7].sus = "617";
+	images3[7].st = "139";
+	images3[7].sursa = "HO1/room3/pesokchasi.png";
+	images3[7].alt = "Sand glass";
+	images3[8].sus = "540";
+	images3[8].st = "451";
+	images3[8].sursa = "HO1/room3/kartoshka.png";
+	images3[8].alt = "Potatoes";
+	images3[9].sus = "156";
+	images3[9].st = "177";
+	images3[9].sursa = "HO1/room3/fish.png";
+	images3[9].alt = "Fish";
+	images3[10].sus = "412";
+	images3[10].st = "665";
+	images3[10].sursa = "HO1/room3/svecha.png";
+	images3[10].alt = "Candle";
+	images3[11].sus = "395";
+	images3[11].st = "61";
+	images3[11].sursa = "HO1/room3/terka.png";
+	images3[11].alt = "Grater";
+	images3[12].sus = "248";
+	images3[12].st = "688";
+	images3[12].sursa = "HO1/room3/banan.png";
+	images3[12].alt = "Banana";
+	images3[13].sus = "246";
+	images3[13].st = "645";
+	images3[13].sursa = "HO1/room3/utka.png";
+	images3[13].alt = "Duck";
+	images3[14].sus = "409";
+	images3[14].st = "437";
+	images3[14].sursa = "HO1/room3/n_katalka.png";
+	images3[14].alt = "Rolling pin";
+	images3[15].sus = "131";
+	images3[15].st = "493";
+	images3[15].sursa = "HO1/room3/n_bigspoon.png";
+	images3[15].alt = "Big spoon";
+	images3[16].sus = "235";
+	images3[16].st = "105";
+	images3[16].sursa = "HO1/room3/yagoda.png";
+	images3[16].alt = "Clock";
+	
+	fundal3 = document.createElement("img"); /* imaginea de fundal*/
+	srs3 = fundal3.src = "HO1/room3/background.jpg";
+	
+	var backgr3_latime = 845;	
+	var backgr3_inaltime = 768;
+	
+	camera3 = create_room(images3, fundal3, backgr3_latime, backgr3_inaltime, owl3);
+	camera3.style.display = "none";
+	
+		var images4 = new Array();
+		for(var a=0; a < 17;a++)
+			images4[a] = new Object();
+		
+	images4[0].sus = "3";
+	images4[0].st = "443";
+	images4[0].sursa = "HO1/room4/sova.png";
+	images4[0].alt = "Owl";
+	images4[1].sus = "472";
+	images4[1].st = "38";
+	images4[1].sursa = "HO1/room4/doc2.png";
+	images4[1].alt = "Document";
+	images4[2].sus = "507";
+	images4[2].st = "513";
+	images4[2].sursa = "HO1/room4/pero.png";
+	images4[2].alt = "Feather";
+	images4[3].sus = "722";
+	images4[3].st = "731";
+	images4[3].sursa = "HO1/room4/jemchujina.png";
+	images4[3].alt = "Gem";
+	images4[4].sus = "383";
+	images4[4].st = "143";
+	images4[4].sursa = "HO1/room4/bik.png";
+	images4[4].alt = "Bull";
+	images4[5].sus = "273";
+	images4[5].st = "47";
+	images4[5].sursa = "HO1/room4/aplle.png";
+	images4[5].alt = "Apple";
+	images4[6].sus = "559";
+	images4[6].st = "797";
+	images4[6].sursa = "HO1/room4/bokal.png";
+	images4[6].alt = "Glass";
+	images4[7].sus = "611";
+	images4[7].st = "246";
+	images4[7].sursa = "HO1/room4/sumka.png";
+	images4[7].alt = "Bag";
+	images4[8].sus = "259";
+	images4[8].st = "513";
+	images4[8].sursa = "HO1/room4/tiger.png";
+	images4[8].alt = "Tiger";
+	images4[9].sus = "151";
+	images4[9].st = "431";
+	images4[9].sursa = "HO1/room4/orel.png";
+	images4[9].alt = "Eagle";
+	images4[10].sus = "44";
+	images4[10].st = "0";
+	images4[10].sursa = "HO1/room4/loshad.png";
+	images4[10].alt = "Horse";
+	images4[11].sus = "197";
+	images4[11].st = "531";
+	images4[11].sursa = "HO1/room4/ulitka.png";
+	images4[11].alt = "Snail";
+	images4[12].sus = "444";
+	images4[12].st = "568";
+	images4[12].sursa = "HO1/room4/portret.png";
+	images4[12].alt = "Portait";
+	images4[13].sus = "582";
+	images4[13].st = "0";
+	images4[13].sursa = "HO1/room4/tufel.png";
+	images4[13].alt = "Shoe";
+	images4[14].sus = "466";
+	images4[14].st = "197";
+	images4[14].sursa = "HO1/room4/racushka.png";
+	images4[14].alt = "Shell";
+	images4[15].sus = "143";
+	images4[15].st = "140";
+	images4[15].sursa = "HO1/room4/vlublennie.png";
+	images4[15].alt = "Statue";
+	images4[16].sus = "741";
+	images4[16].st = "0";
+	images4[16].sursa = "HO1/room4/myachik.png";
+	images4[16].alt = "Tennisball";
+	
+		fundal4 = document.createElement("img"); /* imaginea de fundal*/
+	srs4 = fundal4.src = "HO1/room4/background.jpg";
+	
+	var backgr4_latime = 845;	
+	var backgr4_inaltime = 768;
+	
+	camera4 = create_room(images4, fundal4, backgr4_latime, backgr4_inaltime, owl4);
+	camera4.style.display = "none";
+	
+	
+		var images5 = new Array();
+		for(var a=0; a < 17;a++)
+			images5[a] = new Object();
+		
+	images5[0].sus = "616";
+	images5[0].st = "517";
+	images5[0].sursa = "HO1/room5/binoculars.png";
+	images5[0].alt = "Binoculars";
+	images5[1].sus = "418";
+	images5[1].st = "372";
+	images5[1].sursa = "HO1/room5/paper-bag.png";
+	images5[1].alt = "Paper bag";
+	images5[2].sus = "306";
+	images5[2].st = "46";
+	images5[2].sursa = "HO1/room5/passport.png";
+	images5[2].alt = "Passport";
+	images5[3].sus = "670";
+	images5[3].st = "227";
+	images5[3].sursa = "HO1/room5/handcuffs.png";
+	images5[3].alt = "Handcuffs";
+	images5[4].sus = "342";
+	images5[4].st = "616";
+	images5[4].sursa = "HO1/room5/mirror.png";
+	images5[4].alt = "Mirror";
+	images5[5].sus = "702";
+	images5[5].st = "809";
+	images5[5].sursa = "HO1/room5/playing_card.png";
+	images5[5].alt = "Playing card";
+	images5[6].sus = "625";
+	images5[6].st = "37";
+	images5[6].sursa = "HO1/room5/gloves.png";
+	images5[6].alt = "Gloves";
+	images5[7].sus = "722";
+	images5[7].st = "89";
+	images5[7].sursa = "HO1/room5/magnifying_glass.png";
+	images5[7].alt = "Magnifying glass";
+	images5[8].sus = "588";
+	images5[8].st = "714";
+	images5[8].sursa = "HO1/room5/purse.png";
+	images5[8].alt = "Purse";
+	images5[9].sus = "432";
+	images5[9].st = "26";
+	images5[9].sursa = "HO1/room5/umbrella.png";
+	images5[9].alt = "Umbrella";
+	images5[10].sus = "364";
+	images5[10].st = "778";
+	images5[10].sursa = "HO1/room5/ring.png";
+	images5[10].alt = "Ring";
+	images5[11].sus = "474";
+	images5[11].st = "303";
+	images5[11].sursa = "HO1/room5/belt.png";
+	images5[11].alt = "Belt";
+	images5[12].sus = "469";
+	images5[12].st = "183";
+	images5[12].sursa = "HO1/room5/glasses.png";
+	images5[12].alt = "Glasses";
+	images5[13].sus = "630";
+	images5[13].st = "639";
+	images5[13].sursa = "HO1/room5/turtle.png";
+	images5[13].alt = "Turtle";
+	images5[14].sus = "334";
+	images5[14].st = "216";
+	images5[14].sursa = "HO1/room5/n_bear.png";
+	images5[14].alt = "Bear";
+	images5[15].sus = "255";
+	images5[15].st = "395";
+	images5[15].sursa = "HO1/room5/glass.png";
+	images5[15].alt = "Glass";
+	images5[16].sus = "276";
+	images5[16].st = "750";
+	images5[16].sursa = "HO1/room5/butterfly.png";
+	images5[16].alt = "Butterfly";
+	
+		fundal5 = document.createElement("img"); /* imaginea de fundal*/
+	srs5 = fundal5.src = "HO1/room5/background.jpg";
+	
+	var backgr5_latime = 845;	
+	var backgr5_inaltime = 768;
+	
+	camera5 = create_room(images5, fundal5, backgr5_latime, backgr5_inaltime, owl5);
+	camera5.style.display = "none";
+	
+		var images6 = new Array();
+		for(var a=0; a < 17;a++)
+			images6[a] = new Object();
+		
+	images6[0].sus = "83";
+	images6[0].st = "515";
+	images6[0].sursa = "HO1/room6/shoe_female.png";
+	images6[0].alt = "Shoe";
+	images6[1].sus = "334";
+	images6[1].st = "108";
+	images6[1].sursa = "HO1/room6/alarm-clock.png";
+	images6[1].alt = "Alarm clock";
+	images6[2].sus = "360";
+	images6[2].st = "408";
+	images6[2].sursa = "HO1/room6/diadem.png";
+	images6[2].alt = "Diadem";
+	images6[3].sus = "128";
+	images6[3].st = "66";
+	images6[3].sursa = "HO1/room6/cow.png";
+	images6[3].alt = "Cow";
+	images6[4].sus = "140";
+	images6[4].st = "373";
+	images6[4].sursa = "HO1/room6/dragonfly.png";
+	images6[4].alt = "Dragonfly";
+	images6[5].sus = "272";
+	images6[5].st = "416";
+	images6[5].sursa = "HO1/room6/n_figurine.png";
+	images6[5].alt = "Figurine";
+	images6[6].sus = "476";
+	images6[6].st = "213";
+	images6[6].sursa = "HO1/room6/wrist-watch.png";
+	images6[6].alt = "Wrist-watch";
+	images6[7].sus = "368";
+	images6[7].st = "283";
+	images6[7].sursa = "HO1/room6/n_statuette2.png";
+	images6[7].alt = "Statuette";
+	images6[8].sus = "160";
+	images6[8].st = "315";
+	images6[8].sursa = "HO1/room6/n_picture_post_card.png";
+	images6[8].alt = "Postcard";
+	images6[9].sus = "52";
+	images6[9].st = "262";
+	images6[9].sursa = "HO1/room6/monk_1.png";
+	images6[9].alt = "Monk";
+	images6[10].sus = "631";
+	images6[10].st = "650";
+	images6[10].sursa = "HO1/room6/beads_pearls.png";
+	images6[10].alt = "Beads";
+	images6[11].sus = "420";
+	images6[11].st = "767";
+	images6[11].sursa = "HO1/room6/brooch.png";
+	images6[11].alt = "Brooch";
+	images6[12].sus = "190";
+	images6[12].st = "24";
+	images6[12].sursa = "HO1/room6/hat.png";
+	images6[12].alt = "Hat";
+	images6[13].sus = "185";
+	images6[13].st = "547";
+	images6[13].sursa = "HO1/room6/fan.png";
+	images6[13].alt = "Fan";
+	images6[14].sus = "584";
+	images6[14].st = "367";
+	images6[14].sursa = "HO1/room6/butterfly.png";
+	images6[14].alt = "Butterfly";
+	images6[15].sus = "207";
+	images6[15].st = "207";
+	images6[15].sursa = "HO1/room6/n_vase.png";
+	images6[15].alt = "Vase";
+	images6[16].sus = "475";
+	images6[16].st = "104";
+	images6[16].sursa = "HO1/room6/pigeon.png";
+	images6[16].alt = "Pigeon";
+	
+		fundal1 = document.createElement("img"); /* imaginea de fundal*/
+	srs1 = fundal1.src = "HO1/room6/background.jpg";
+	
+	var backgr1_latime = 845;	
+	var backgr1_inaltime = 768;
+	
+	camera6 = create_room(images6, fundal1, backgr1_latime, backgr1_inaltime, owl6);
+	camera6.style.display = "none";
+	
+	}
+	
+	
+	
+	/*
+---Model functie de miscare a unui obiect DOM intre 2 puncte pe ecran---- se considera ca parametrii au fost dati corect
+(in cadrul functiei lipseste testarea validitatii parametrilor;
+testul, daca e necesar, se face in afara functiei sau il adaugati voi in model)
+init_miscare - realizeaza calculele preliminare miscarii
+ob - obiectul de miscat
+left_i, top_i - coordonatele pe ecran ale punctului de pornire (nu coincid intotdeauna cu coordonatele actuale ale lui ob)
+left_f, top_f - coordonatele pe ecran ale punctului de sosire
+nr_pasi -numarul de pasi facuti de animatie
+daca se cunoaste deplasarea (notata depl) in px la un pas (sau viteza) nr_pasi poate fi calculat prin:
+lung=Math.sqrt(Math.pow(left_f-left_i,2)+Math.pow(top_f-top_i,2));
+nr_pasi=Math.ceil(lung/depl);//am un pas in plus (ultimul)
+*/
+function init_miscare(ob, left_i, top_i, left_f, top_f, nr_pasi)//ob se misca de la punctul (xi,yi) la punctul (xf,yf)
+{
+//ob trebuie sa aiba pozitie absoluta pentru a-i seta coordonatele
+//(uneori pozitia poate a fost setata anterior apelului functiei si instructiunea urmatoare nu mai e necesara)
+ob.style.position="absolute"
+
+var DLeft=left_f-left_i;
+var DTop=top_f-top_i;
+
+// dleft si dtop inseamna cu cat se deplaseaza obiectul pe orizontala si verticala la un pas
+var dleft=DLeft/nr_pasi;
+var dtop=DTop/nr_pasi;
+//top_r si left_r variabile reale in care memoram deplasarea exacta (fara erori de rotunjire)
+var top_r=top_i;
+var left_r=left_i;
+//porneste miscarea
+misca(ob,top_r,left_r,1,nr_pasi,dleft,dtop,left_f,top_f);
+}
+/* functia efectiva de miscare
+ob - obiectul care trebuie mutat pe ecran
+top_r - top real pentru obiect (nerotunjit la intreg)
+left_r - left real
+pas_c - pas curent (necesar daca la pasii pari sau divizibili cu 3 etc, trebuie sa se intample ceva)
+nr_pasi - numarul de pasi
+dleft, dtop - deplasarea la un pas pe orizontala si verticala
+*/
+function misca(ob,top_r,left_r,pas_c,nr_pasi,dleft,dtop,left_f,top_f)
+{
+var rap = 100 / nr_pasi;
+if (pas_c<nr_pasi)//daca e pas intermediar
+    	{
+    	//actualizeaza topreal si left real
+    	top_r+=dtop;
+    	left_r+=dleft;
+		
+		//fac obiectul din ce in ce mai transparent pana dispare
+		var opac = 100 - Math.round(rap*(pas_c-1));
+    	if (ob.id != "flut")
+			{
+				ob.style.opacity = 0.01 * opac; 
+				ob.style.filter = 'alpha(opacity='+opac+')';
+			}
+		//repozitionare obiect pe ecran
+    	ob.style.top=(Math.round(top_r))+"px";
+    	ob.style.left=(Math.round(left_r))+"px";
+    	
+    	//incrementarea pasului curent
+    	pas_c++;
+    	
+    	//apelarea recursiva a functiei pentru urmatorul pas de miscare
+    	setTimeout(function () {misca(ob,top_r,left_r,pas_c,nr_pasi,dleft,dtop,left_f,top_f);},30);
+
+    	}
+else //ultimul pas - seteazadirect la coord finale; elimina erori rotunjire
+    	{
+    	ob.style.top=(top_f+"px");
+    	ob.style.left=(left_f+"px");
+		if (ob.id != "flut")
+			{
+				ob.style.opacity = "0";
+				ob.style.filter = 'alpha(opacity=0)';
+			}
+		ob.style.display = "none"; 
+    	}
+
+}
+
+	function prima_pag ()
+	{
+		back = document.createElement("img"); /* imaginea de fundal*/
+		srs3 = back.src = "menu/background.png";
+	
+		var back_latime = 1024;	
+		var back_inaltime = 768;
+		
+		var zona_princ = document.createElement("div");
+		zona_princ.style.height = (window.innerHeight-6)+"px"; 
+		var raport = parseInt(zona_princ.style.height) / back_inaltime; 
+		zona_princ.style.width = (Math.floor(raport * back_latime)) + "px"; 
+		zona_princ.style.position = "absolute";
+		zona_princ.style.display = "inline";
+		zona_princ.style.textAlign = "center";
+		zona_princ.className = "zona_pr";
+		zona_princ.style.margin = "0";
+		zona_princ.style.border = "3px solid black";//#991010";
+		zona_princ.style.top = "0px";
+		zona_princ.style.left = ((window.innerWidth - parseInt(zona_princ.style.width)) / 2) + "px"; /*pozitia coltului stanga sus al imaginii*/
+		document.body.appendChild(zona_princ);
+		var title = document.getElementById("titlu");
+		
+		back.style.height = zona_princ.style.height; 
+		back.style.width = zona_princ.style.width; 
+		back.style.position = "absolute";
+		back.className = "back_zona_pr";
+		back.style.margin = "0";
+		back.style.top = "0px";
+		back.style.left = "0px";
+		zona_princ.appendChild(back);
+		//title = document.getElementById("titlu");
+		title.style.height = (Math.floor(raport * parseInt(title.clientHeight)*1.2)) + "px";
+		title.style.width = (Math.floor(raport * parseInt(title.clientWidth)*1.2)) + "px";
+		title.style.position = "absolute";
+		title.style.top = (-Math.floor(raport*20))+"px";
+		title.style.left = (Math.floor(raport*380))+"px";
+		zona_princ.appendChild(title);
+		//document.body.removeChild(title);
+		//document.body.removeChild(title);
+		var meniu_pr = new Image();
+		meniu_pr.src = "menu/mainmenu_n.png";
+		meniu_pr.style.position = "absolute";
+		meniu_pr.style.width = (Math.floor(raport*224)+10)+"px";
+		meniu_pr.style.height = (Math.floor(raport*72)+3)+"px";
+		meniu_pr.style.bottom = "0px";
+		meniu_pr.style.left = (Math.floor(raport*150))+"px";
+		meniu_pr.onclick = function (){ 
+											zona_princ.style.display = "none";
+											harta();
+											}
+											
+		zona_princ.appendChild(meniu_pr);
+		var opt = new Image();
+		opt.src = "menu/options_n.png";
+		opt.style.position = "absolute";
+		opt.style.width = (Math.floor(raport*224)+10)+"px";
+		opt.style.bottom = (Math.floor(raport*72)+3)+"px";
+		opt.style.bottom = (Math.floor(raport*80))+"px";
+		opt.style.right = (Math.floor(raport*100))+"px";
+		var ok = 0;
+		opt.onclick = function () {
+									if (!ok) 
+										{
+											ok = alege_personaj(zona_princ, raport);
+											setTimeout(function(){alert ("Choose your favourite character. \n\n(Click on his / her photo.)");}, 700);
+										}
+									else ok=0;
+									}
+		zona_princ.appendChild(opt);
+		
+	}
+	
+		function harta ()
+	{
+		back = document.createElement("img"); /* imaginea de fundal*/
+		srs = back.src = "char/background.png";
+	
+	var rap = ((window.innerHeight / window.innerWidth < 1) ? (window.innerHeight / 768) : (window.innerWidth / 845));
+	
+	var title = new Image();
+	title.src = "titlu.png";
+	title.className = "titlu";
+	title.style.top = "0px";
+	title.style.left = "0px";
+	title.style.position = "absolute";
+	document.body.appendChild(title);
+	if (parseInt(title.clientHeight) > innerHeight) 
+		{
+			title.style.height = (Math.floor(rap * 1.1 * parseInt(innerHeight))) + "px";
+			title.style.width = "auto";
+		}
+	
+		var back_latime = 376;	
+		var back_inaltime = 325;
+		
+		
+		anticamera = document.createElement("div");
+		anticamera.style.height = (window.innerHeight-6)+"px"; 
+		anticamera.style.textAlign = "center"; 
+		var raport = parseInt(anticamera.style.height) / back_inaltime; 
+		anticamera.style.width = (Math.floor(raport * back_latime)+200) + "px"; 
+		anticamera.style.position = "absolute";
+		anticamera.style.display = "inline";
+		anticamera.style.textAlign = "center";
+		anticamera.className = "map";
+		anticamera.style.margin = "0px";
+		anticamera.style.top = "0px";
+		anticamera.style.left = ((window.innerWidth - parseInt(anticamera.style.width)) / 2) + "px"; /*pozitia coltului stanga sus al imaginii*/
+		document.body.appendChild(anticamera);
+		//var title = document.getElementById("titlu");
+		
+		back.style.height = anticamera.style.height; 
+		back.style.width = anticamera.style.width; 
+		back.style.position = "absolute";
+		back.className = "back_zona_pr";
+		back.style.margin = "0";
+		back.style.top = "0px";
+		back.style.left = "0px";
+		anticamera.appendChild(back);
+		var br = document.createElement("br");
+		var poze = new Array();
+		var j = 0;
+		var k = 0;
+		
+		for(var i = 0; i < 6; i++)
+		{
+			poze[i] = new Image();
+		}
+		
+		poze[0].src = "HO1/room1/background_1.jpg";
+		
+		poze[1].src = "HO1/room2/background.jpg";
+		poze[2].src = "HO1/room3/background.jpg";
+		poze[3].src = "HO1/room4/background.jpg";
+		poze[4].src = "HO1/room5/background.jpg";
+		poze[5].src = "HO1/room6/background.jpg";
+		
+		for(var i = 0; i < 6; i++)
+		{
+			if (i == 3) {  j = 1; k = 0; }
+			poze[i].style.height = (rap * 180) + "px";
+			poze[i].style.width = "auto";
+			poze[i].style.border = "white solid 2px";
+			poze[i].style.top = (Math.floor(j * 845 * 150 / 768) + rap * 120) + "px";
+			poze[i].style.left = (Math.floor(k * rap * 230 + rap * 230)) + "px";
+			k++;
+			var s = i+1;
+			poze[i].style.position = "absolute";
+			}
+			
+			poze[0].onclick = function () {anticamera.style.display = "none"; camera1.style.display = "inline";};
+			poze[1].onclick = function () {anticamera.style.display = "none"; camera2.style.display = "inline";};
+			poze[2].onclick = function () {anticamera.style.display = "none"; camera3.style.display = "inline";};
+			poze[3].onclick = function () {anticamera.style.display = "none"; camera4.style.display = "inline";};
+			poze[4].onclick = function () {anticamera.style.display = "none"; camera5.style.display = "inline";};
+			poze[5].onclick = function () {anticamera.style.display = "none"; camera6.style.display = "inline";};
+			
+		anticamera.appendChild(poze[0]);
+		anticamera.appendChild(poze[1]);
+		anticamera.appendChild(poze[2]);
+		anticamera.appendChild(br);
+		anticamera.appendChild(poze[3]);
+		anticamera.appendChild(poze[4]);
+		anticamera.appendChild(poze[5]);
+		
+		var story = document.createElement("div");
+		story.style.height = (Math.floor(rap * 140)) + "px"; 
+		story.style.textAlign = "center"; 
+		story.style.color = "white"; 
+		story.style.backgroundColor = "black"; 
+		story.style.width = (Math.floor(rap * 750)) + "px"; 
+		story.style.position = "absolute";
+		story.style.display = "inline";
+		story.style.textAlign = "center";
+		story.innerHTML = "[Povestea jocului...]";
+		story.style.margin = "0px";
+		story.style.bottom = (Math.floor(rap * 100)) + "px"; 
+		story.style.left = (Math.floor(rap * (parseInt(anticamera.style.width) - parseInt(story.style.width)) / 2)) + "px"; /*pozitia coltului stanga sus al imaginii*/
+		anticamera.appendChild(story);
+		
+		var om = new Image();
+		om.src = return_src();
+		om.style.position = "absolute";
+		om.style.bottom = (Math.floor(rap * 100)) + "px"; 
+		om.style.left = (parseInt(story.style.left) + parseInt(story.style.width)) + "px";
+		om.style.width = (Math.floor(rap * 180)) + "px"; 
+		om.style.height = "auto";
+		om.style.left = (parseInt(story.style.left) + parseInt(story.style.width)) + "px";
+		anticamera.appendChild(om);
+		
+	}
+	
+	function return_src()
+	{
+		if (id_pers == "char_0") return (sou = "char/negru.png");
+		if (id_pers == "char_1") return (sou = "char/boy1.png");
+		if (id_pers == "char_2") return (sou = "char/roz.png");
+		if (id_pers == "char_3") return (sou = "char/man2.png");
+	}
+	
+	function alege_personaj(zona_princ, r)
+	{
+		var pt_pers = document.createElement("div");
+		var personaje = new Array();
+		var ok = 0;
+		
+		personaje[0] = new Image();
+		personaje[0].src = "char/negru.png";
+		personaje[0].id = "char_0";
+		personaje[0].onclick = function () { id_pers = "char_0"; alert("Your character is: \n\nThe Woman in Black"); ok = 1; pt_pers.style.display = "none";}
+		personaje[1] = new Image();
+		personaje[1].src = "char/boy1.png";
+		personaje[1].id = "char_1.png";
+		personaje[1].onclick = function () { id_pers = "char_1"; alert("Your character is: \n\nHappy Sam"); ok = 1; pt_pers.style.display = "none";}
+		personaje[2] = new Image();
+		personaje[2].src = "char/roz.png";
+		personaje[2].id = "char_2.png";
+		personaje[2].onclick = function () { id_pers = "char_2"; alert("Your character is: \n\nPetit Rose"); ok = 1; pt_pers.style.display = "none";}
+		personaje[3] = new Image();
+		personaje[3].src = "char/man2.png";
+		personaje[3].id = "char_3.png";
+		personaje[3].onclick = function () { id_pers = "char_3"; alert("Your character is: \n\nMr. Smith"); ok = 1; pt_pers.style.display = "none";}
+		/*alt_back = new Image();
+		alt_back.src = "char/background.png";*/
+		
+		var br = document.createElement("br");
+		//pt_pers.appendChild(alt_back);
+		pt_pers.appendChild(personaje[0]);
+		pt_pers.appendChild(personaje[1]);
+		pt_pers.appendChild(br);
+		pt_pers.appendChild(personaje[2]);
+		pt_pers.appendChild(personaje[3]);
+		
+		for(var i = 0; i < 4; i++)
+		{
+			personaje[i].style.width = "auto";
+			personaje[i].style.height = (Math.floor(r * 240)) + "px"; 
+		}
+		
+		pt_pers.style.position = "absolute";
+		pt_pers.style.display = "inline";
+		pt_pers.style.width = (Math.floor(r * 410)) + "px"; 
+		pt_pers.style.height = (Math.floor(r * 495)) + "px"; 
+		pt_pers.style.left = ((parseInt(zona_princ.style.width) - parseInt(pt_pers.style.width))/2) + "px";
+		pt_pers.style.opacity = "0.9";
+		pt_pers.style.filter = 'alpha(opacity=90)';
+		pt_pers.style.backgroundColor = "white";
+		pt_pers.style.border = "white solid 2px";
+		pt_pers.style.borderRadius = "40px";
+		
+		zona_princ.appendChild(pt_pers);
+		
+		return ok;
+		
+	}
+	
+	
+	function create_room(images, fundal, backgr_latime, backgr_inaltime, buha){ 
+	var camera = document.createElement("div"); /*va contine zonele de interes ale jocului: camera cu obiecte de
+												cautat, meniul etc...*/
+	interactiv = document.createElement("div"); /* va contine elementele de cautat, butoanele de meniu, exit, HINT
+													va fi pozitionat in dreapta pozei cu camera*/ 
+	var srs = fundal.src;
+	
+	camera.style.height = (window.innerHeight-6)+"px"; /*am luat inaltimea camerei exact cat inaltimea paginii / ferestrei
+								si am mai scazut 2px pentru a putea pune si un border de cate 1px (1px sus + 1px jos),
+								astfel sa se incadreze bine in pagina*/
+	var raport = parseInt(camera.style.height) / backgr_inaltime; /* pentru ca poza nu se incadreaza neaparat in 
+								ecran, am luat un raport intre inaltimea aleasa de mine (anterior) si dimensiunea
+								reala a pozei pentru a-i putea calcula si latimea, si eventual dimensiunile 
+								obiectelor care vor fi plasate ulterior in camera*/
+	camera.style.width = (Math.floor(raport * backgr_latime)+200) + "px"; /* am pus Math.floor deoarece raportul 
+								nefiind neaparat un intreg, latimea ar putea rezulta ca ceva neintreg; dar eu am 
+								nevoie de valori intregi pt reprezentare*/
+	camera.style.position = "absolute";
+	camera.style.display = "inline";
+	camera.className = "div_fundal";
+	camera.style.margin = "0";
+	camera.style.border = "3px solid black";//#991010";
+	//camera.style.background = "url('nuc1.jpg')";
+	camera.style.top = "0px";
+	camera.style.left = ((window.innerWidth - parseInt(camera.style.width)) / 2) + "px"; /*pozitia coltului stanga sus al imaginii*/
+	
+		
+	fundal.style.height = camera.style.height;
+	fundal.style.width = (Math.floor(raport * backgr_latime)) + "px";
+	fundal.style.position = "absolute";
+	top_abs = parseInt(fundal.style.top = "0px");
+	left_abs = parseInt(fundal.style.left = "0px");
+	
+	camera.appendChild(fundal);
+	document.body.appendChild(camera);
+	bottom_abs = parseInt(fundal.style.height);
+	right_abs = parseInt(fundal.style.width);
+	
+	var cap_lista = new Image();
+	cap_lista.src = "menu/object_list_label.png";
+	cap_lista.style.width = "195px";
+	cap_lista.style.height = "auto";
+	interactiv.appendChild(cap_lista);
+		
+	var imageArray = new Array();
+	var span = new Array();
+	
+	for(var i=0; i<images.length; i++) {
+        imageArray[i]=new Image();
+		imageArray[i].src = images[i].sursa;
+		imageArray[i].id = "p"+i;
+		imageArray[i].alt = images[i].alt;
+		imageArray[i].style.position = "absolute";
+		imageArray[i].style.top = (Math.floor(raport * images[i].sus)) + "px";
+		imageArray[i].style.left = (Math.floor(raport * images[i].st)) + "px";
+		imageArray[i].style.display="inline";
+		//imageArray[i].style.border ="red 1px solid";
+		imageArray[i].className="obiect";
+		camera.appendChild(imageArray[i]);
+		var wid = Math.round(raport * parseInt(imageArray[i].clientWidth));
+		var hei = Math.round(raport * parseInt(imageArray[i].clientHeight));
+		imageArray[i].style.width = wid + "px";
+		imageArray[i].style.height = hei + "px";
+				
+	}
+
+	var pozitii = alege_aleator (imageArray);
+	for(var i=0; i<10; i++) 
+		{
+		imageArray[pozitii[i]].className= "obiect_ales";
+		}
+	
+	var fluture = new Image();
+	fluture.src = "butterflyside/butterflyside1.png";
+	fluture.id = "flut";
+	fluture.style.position = "absolute";
+	fluture.style.top = "-10px";
+	fluture.style.left = (parseInt(fundal.style.width)-100) + "px";
+	
+	var meniu = new Image();
+	meniu.src = "menu/menu_n.png";
+	meniu.onmouseover = function() {meniu.src = "menu/menu_hl.png";};
+	meniu.onmouseout = function() {meniu.src = "menu/menu_n.png";};
+	meniu.onclick = function() {camera.style.display = "none"; anticamera.style.display = "inline";}
+	meniu.style.position = "absolute";
+	meniu.style.bottom = "60px";
+	meniu.style.left = "0px";
+		
+	
+	var hint = new Image();
+	var asteptare = false;
+	hint.style.position = "absolute";
+	hint.style.bottom = "0px";
+	hint.style.left = "0px";
+	hint.src = "menu/hint_n.png";
+	
+	camera.appendChild(fluture);
+	interactiv.appendChild (hint);
+	interactiv.appendChild (buha[0]);
+	interactiv.appendChild (meniu);
+	
+	var j = 0; //un indice pentru span
+	for(var i=0; i<imageArray.length; i++) 
+	{
+		if (imageArray[i].className == "obiect_ales")
+		{
+			span[j] = document.createElement("span");
+			span[j].innerHTML = imageArray[i].alt;
+			span[j].className = "nume_obj";
+			span[j].style.font = "20px";
+			span[j].style.color = "white";
+			var br = document.createElement("br");
+			interactiv.appendChild(span[j]); 
+			interactiv.appendChild(br);
+			interactiv.appendChild(br);
+			t_i = parseInt(imageArray[i].style.top);
+			l_i = parseInt(imageArray[i].style.left);
+			if (t_i >= 100) var t_f = t_i - 100;
+			else var t_f = t_i + 100;
+			var l_f = l_i - 100;
+			(function (ind1, ind2, li1, ti1, lf1, tf1) {
+			imageArray[ind1].onclick = function () { 
+												init_miscare(imageArray[ind1], li1, ti1, lf1, tf1, 20);
+												imageArray[ind1].className = "obiect_gasit"
+												span[ind2].className = "obj_gasit";
+												span[ind2].style.color = "#00ae8b";
+												var po = alegere_indiciu(imageArray);
+												if (po < 0) alert("Congratulations! The room is cleared. \n\nClick on MENU to see other rooms.");
+												};
+											}
+											)(i, j, l_i, t_i, l_f, t_f);
+			j++;
+		
+		}
+	
+	}
+	
+	interactiv.style.position = "absolute";
+	interactiv.className = "inter";
+	interactiv.style.margin = "0";
+	interactiv.style.padding = "0";
+	interactiv.style.height = camera.style.height; //(parseInt(camera.style.height) - 10) + "px";
+	interactiv.style.width = "195px";
+	interactiv.style.top = "0px";
+	interactiv.style.borderWidth = "0px 0px 0px 5px";
+	interactiv.style.borderStyle = "groove";
+	interactiv.style.borderColor = "#592720";
+	interactiv.style.textAlign = "center";
+	interactiv.style.font = "20px white";
+	//interactiv.style.color = "white";
+	interactiv.style.left = (parseInt(fundal.style.left) + parseInt(fundal.style.width))  + "px";
+	//interactiv.style.background = "#B7C89E url('nuc1.jpg')";//"#d0d0A0";//"#FAF0BE";//"#FFFACD";//"#EECFA1"
+	//interactiv.style.border = "1px solid red";
+	camera.appendChild(interactiv);
+	
+	
+	hint.onmouseover = function() {hint.src = "menu/hint_hl.png";};
+	hint.onmouseout = function() {hint.src = "menu/hint_n.png";};
+	hint.src = "menu/hint_n.png"; 
+	
+	
+	hint.onclick = function() {
+								if (!asteptare) 
+									{
+									var loc = alegere_indiciu(imageArray);
+									if (loc >= 0)
+										{
+											asteptare = true; 
+											hint.src = "menu/hint_gray.png"; 
+											hint.onmouseover = function() {hint.src = "menu/hint_gray.png";};
+											hint.onmouseout = function() {hint.src = "menu/hint_gray.png";};
+											interv = zboara_fluture(fluture);
+											var t_f = parseInt(imageArray[loc].style.top);
+											var l_f = parseInt(imageArray[loc].style.left);
+											init_miscare(fluture, parseInt(fluture.style.left), parseInt(fluture.style.top), l_f-15, t_f-40, 100);
+											oneloop(buha[0]);
+											setTimeout (function(){ 
+																asteptare = false; 
+																fluture.src = "butterflyside/butterflyside1.png";
+																fluture.style.top = "-10px";
+																fluture.style.left = (parseInt(fundal.style.width)-100) + "px";
+																fluture.style.opacity = "1";
+																fluture.style.filter = 'alpha(opacity=100)';
+																fluture.style.display = "inline";
+																clearInterval(interv);
+																hint.src = "menu/hint_n.png"; 
+																hint.onmouseover = function() {hint.src = "menu/hint_hl.png";};
+																hint.onmouseout = function() {hint.src = "menu/hint_n.png";};
+																}
+														,13000);
+										}
+									else 
+										alert("There are no more objects left.");
+									}
+								};
+	return camera;
+	}
+	
+	function init(){
+	definire_camere();
+	//alert (fundal1.id);
+	prima_pag();
+	}
+	
+	
+	function timpap(img, i){
+	
+	trem=setTimeout(function (){
+			document.getElementsByClassName('bufnita')[0].src = img.src;
+				}, i*100);
+	
+}
+
+function zboara_fluture(fluturel)
+{
+	var nr_titlu = 1;
+	var interv = setInterval(function()
+						{
+						if(nr_titlu == 1)
+							{
+								fluturel.src = "butterflyside/butterflyside2.png";
+								nr_titlu = 2;
+							}
+						else if(nr_titlu == 2)
+								{
+									fluturel.src = "butterflyside/butterflyside3.png";
+									nr_titlu = 3;
+								}
+								else if(nr_titlu == 3)
+										{
+											fluturel.src = "butterflyside/butterflyside1.png";
+											nr_titlu = 1;
+										}
+				}, 100);
+	return interv;
+}
+
+	
+function oneloop(owl)
+{
+	lung = 130;
+	for(var i=0; i<lung; i++) 
+		{
+		timpap(owl[i], i);
+		}
+	
+}
+
+function alege_aleator (vector)
+{
+	var lung_vect = vector.length;
+	var lista_pozitii = new Array();
+	var numar = 0;
+	var ok = 1;
+	
+	for (var i=0;i < 10; i++)
+		{
+		do {
+        ok = 1;
+        numar = Math.floor(Math.random() * lung_vect);
+		for ( var j = 0; j < i && ok == 1; j++) {
+           if (lista_pozitii[j] == numar)
+              ok = 0;
+           }
+        }
+      while (ok != 1);
+     lista_pozitii[i] = numar;
+	 }
+		
+	return lista_pozitii;
+}
+
+function alegere_indiciu(vector)
+{
+	var lung_vect = vector.length;
+	var lista_pozitii = new Array();
+	var j=-1;
+	
+	for (var i=0; i < lung_vect; i++)
+		if (vector[i].className == "obiect_ales") lista_pozitii[++j] = i;
+	
+	return ((j>=0)?lista_pozitii[j]:j);
+		
+}
+
+
+</script>
+
+</head>
+
+<body onload = "init();" align = "center">
+	<img src = "titlu.png" align = "left" id = "titlu">
+</body>
+</html>

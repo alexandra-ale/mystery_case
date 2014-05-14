@@ -1,0 +1,10 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<scene>
+<object name="resume_hl" localized="resume_hl" image="resume_hl.png" mask="" x="397" y="149" w="224" h="72" />
+<object name="resume_n" localized="resume_n" image="resume_n.png" mask="" x="397" y="149" w="224" h="72" />
+<object name="options_hl" localized="options_hl" image="options_hl.png" mask="" x="395" y="229" w="226" h="72" />
+<object name="options_n" localized="options_n" image="options_n.png" mask="" x="395" y="229" w="226" h="72" />
+<object name="mainmenu_hl" localized="mainmenu_hl" image="mainmenu_hl.png" mask="" x="397" y="313" w="224" h="72" />
+<object name="mainmenu_n" localized="mainmenu_n" image="mainmenu_n.png" mask="" x="397" y="313" w="224" h="72" />
+<object name="background" localized="background" image="background.png" mask="" x="342" y="80" w="325" h="376" />
+</scene>
